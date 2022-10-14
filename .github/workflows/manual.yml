@@ -40,7 +40,7 @@ jobs:
            PR title: ${{ github.event.pull_request.title }}  
            PR description: ${{ github.event.pull_request.description }}  
            In addition, please resolve other issues, if any. 
-        fields: '"priority":{"id": "4"}}'
+        fields: '{"priority":{"id": "4"}}'
 
     - name: Log created issue
       run: echo "Issue ${{ steps.create.outputs.issue }} was created"
